@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sono:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Barlow Semi Condensed, sans-serif;
+}
+header{
+    background: linear-gradient(180deg, rgba(51, 152, 219, 0.63) 0%, rgba(46, 204, 112, 0.61) 100%),url(Building1.jpg);
+    background-size: contain;
+    background-position: top;
+}
+.logo{
+    mix-blend-mode: multiply;
+}
+ul{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    gap: 30px;
+}
+ul img{
+    margin-right: 250px;
+    margin-top: 20px;
+}
+ul li{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 10ms ease-out;
+}
+a:hover{
+    color: #000;
+    border: 2px solid black;
+    transform: scale(1.1);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.contactA{
+    background-color:white;
+    color:black;
+    padding: 20px;
+    border-radius: 40px;
+    transition: background-color 1s ease-out;
+}
+.contactA:hover{
+    background-color: black;
+    color: white;
+}
+.contactA:active{
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    color: #000;
+    border: none;
+}
+.ownership{
+    color:black;
+}
+.hero{
+    width: 610px;
+    height: 500px;
+    margin: 40px 30px;
+    padding: 20px;
+    color: white;
+}
+.hero p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.hero h1{
+    font-size: 60px;
+    letter-spacing:2px;
+}
+.services{
+    width: 550px;
+    margin-left: 32%;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    padding: 20px;
+    background-color:whitesmoke;
+    transition: background-color,scale 1s ease-out;
+}
+.services:hover,
+.mission:hover,
+.vision:hover,
+.why:hover{
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.services h2{
+    font-size: 40px;
+    text-align: center;
+}
+.services p{
+    font-size: 20px;
+    text-align: center;
+}
+.ambition{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10%;
+}
+.vision,
+.mission{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 15px;
+    box-shadow: 1px 1px 5px black;
+}
+.values{
+    text-align: center;
+    margin-top: 10%;
+    background: linear-gradient(180deg, rgba(51, 152, 219, 0.5) 0%, rgba(46, 204, 112, 0.4) 100%),url(Building2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    color:white;
+    padding: 50px;
+}
+.valuesId{
+    display: flex;
+    justify-content: space-around;
+}
+.valuesId img{
+    margin-top: 20px;
+    background-color: tomato;
+    mix-blend-mode:multiply;
+}
+/* .valuesId img::before{
+    content: '';
+    background-color: tomato;
+    
+} */
+.why{
+    width: 530px;
+    height: 230px;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 20px;
+
+}
+.why h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.why p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    background:  linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%)
+}
+.logistics{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    width: 500px;
+}
+.order{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    color:#000;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 1s ease-out;
+}
+.order:hover{
+    background-color: black;
+    color:#fff;
+}
+.order:active{
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    color: #000;
+    border: none;
+}
+
+.send{
+    font-size: 35px;
+}
+.downloadApp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+.playstore:hover,
+.appStore:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.phone{
+    mix-blend-mode: multiply;
+    }
+.appStore{
+    margin-top: 69px;
+}
+.soon{
+    margin-top: -80px;
+    margin-left: 5px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 2%;
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    height: 350px;
+    animation:backgroundColor 18s ease infinite;
+}
+.email{
+    width:400px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.email::placeholder{
+    font-size: 18px;
+}
+.subscribeBtn{
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 1s ease-out;
+}
+.subscribeBtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.novaLogistics{
+    color: #fff;
+}
+.subscribeBtn:active{
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%);
+    color: black;
+    border: none;
+}
+
+.privacy{
+    color:blue;
+    text-decoration: none;
+}
+.privacy:hover{
+    color: green;
+    border: none;
+    box-shadow: 0 0 0 ;
+}
+.subscribe h3{
+    font-size: 25px;
+    word-spacing: 2px;
+}
+.offices{
+    width: 300px;
+}
+.offices h3{
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+}
+.offices h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.socials span{
+    font-size: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 5%;
+    height: 100%;
+    padding-bottom: 5%;
+    background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    animation:backgroundColor 18s ease infinite;
+}/* 
+@keyframes backgroundColor {
+    0%{
+        background: linear-gradient(90deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    }
+    20%{
+        background: linear-gradient(120deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 20%); 
+    }
+    50%{
+        background: linear-gradient(180deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 50%); 
+    }
+    80%{
+        background: linear-gradient(270deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 80%); 
+    }
+    100%{
+        background: linear-gradient(360deg, hsla(204, 70%, 53%, 1) 0%, hsla(145, 63%, 49%, 1) 100%); 
+    }
+} */
